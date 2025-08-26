@@ -20,7 +20,7 @@ body {
 
 .teaser .hero-body {
   padding-top: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem; /* reduced from 3rem to shrink gap before Abstract */
 }
 
 .teaser {
@@ -105,6 +105,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    /* 让嵌入在 Bulma .icon 容器内的内联 SVG 跟随图标容器尺寸缩放 */
+    .icon svg {
+      width: 100%;
+      height: 100%;
+      display: block; /* 避免内联元素造成的额外间隙 */
+    }
 }
 
 .publication-body img {
@@ -131,6 +137,31 @@ body {
 
 .eql-cntrb { 
   font-size: smaller;
+}
+
+
+
+
+/* Compact spacing for sections like Abstract */
+.section.is-compact {
+  padding-top: 1.35rem; /* reduced from Bulma default 3rem */
+  padding-bottom: 1.5rem; /* keep reasonable bottom space */
+}
+
+
+
+
+/* 优化按钮内小图标尺寸与文字对齐 */
+.button .icon.is-small {
+  width: 1.55rem;      /* 控制图标盒子宽度（原 1rem） */
+  height: 1.55rem;     /* 控制图标盒子高度（原 1rem） */
+}
+.button .icon.is-small .fa,
+.button .icon.is-small .fas,
+.button .icon.is-small .far,
+.button .icon.is-small .fab {
+  font-size: 1.45rem; /* 调整 Font Awesome 图标字体大小（原 0.95rem） */
+  line-height: 1.55rem;  /* 与容器对齐（原 1rem） */
 }
 
 

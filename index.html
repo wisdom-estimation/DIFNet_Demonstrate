@@ -2,13 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
+  <!-- 用于社交媒体横幅的 Meta 标签，这些标签应适当填写，因为它们是您的“名片” -->
+  <!-- 用适当的信息替换内容标签 -->
   <meta name="description" content="DESCRIPTION META TAG">
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- 横幅图像的路径，应在下面列出的路径中。最佳尺寸为 1200X630 -->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
@@ -16,17 +16,17 @@
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- 横幅图像的路径，应在下面列出的路径中。最佳尺寸为 1200X600 -->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
+  <!-- 您的论文要被索引的关键字 -->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  <!-- 此icon 和 title指的是地址栏的图标-->
+  <title>DIFNet</title>
+  <link rel="icon" type="image/x-icon" href="static/images/estimation_car_32.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"       
   rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -36,83 +36,100 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <!-- Enable Font Awesome JS to render <i> icons as inline SVG (no local webfonts needed) -->
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
+<!-- ript src="static/js/bulma-carousel.min.js"></script> -->
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <!-- MathJax configuration for rendering LaTeX inline math like $...$ and defining macros -->
+  <script>
+    // Configure MathJax: enable inline math with $...$ or \( ... \)
+    // and define custom macros used in the text (e.g., \vz, \vx, \mP)
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        macros: {
+          vz: '{z}',
+          vx: '{x}',
+          mP: '{P}'
+        }
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <!-- Load MathJax v3 from CDN (SVG output for crisp rendering) -->
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
 
 
   <section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
+      <div class="container is-max-widescreen">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <img src="./static/images/estimation_car.png" style="width: 200px;">
+            <h1 class="title is-1 publication-title">DIFNet: Decentralized Information Filtering Fusion with Unknown Correlation in Sensor Measurement Noises</h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
+              <!-- 论文作者 -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Ruifeng Dong</a><sup>*1,2,3</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Ming Wang</a><sup>*4</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Ning Liu</a><sup>1,2,3</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Tong Guo</a><sup>1,2,3</sup>,</span>
+                  <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jiayi Kang</a><sup>5,✉</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yao Mao</a><sup>1,2,3</sup>,
                   </span>
                   </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  <div style="height: 10px;"></div> 
+                  <div class="is-size-6 publication-authors is-italic">
+                    <span class="author-block"><sup>1</sup>State Key Laboratory of Optical Field Manipulation Science and Technology, Chengdu, 610209, Sichuan, China</span>
+                    <span class="author-block"><sup>2</sup>Institute of Optics and Electronics, Chinese Academy of Sciences, Chengdu, 610209, Sichuan, China</span>
+                    <span class="author-block"><sup>3</sup>University of Chinese Academy of Sciences, Beijing, 100049, Beijing, China</span>
+                    <span class="author-block"><sup>4</sup>School of Mathematics, Sichuan University, Chengdu, 610000, Sichuan, China</span>
+                    <span class="author-block"><sup>5</sup>Beijing Institute of Mathematical Sciences and Applications, Huairou district, 101400, Beijing, China</span>
                   </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+                    <div style="height: 10px;"></div> 
+                    <!-- ArXiv 摘要链接 -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark" style="background-color: #01B1A0;  color: white; border-color: #01B1A0;">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
 
-                    <!-- Supplementary PDF link -->
+                    <!-- 补充 PDF 链接 -->   
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
+                      class="external-link button is-normal is-rounded is-dark" style="background-color: #01B1A0;  color: white; border-color: #01B1A0;">
+                      <!-- <span class="icon">
                         <i class="fas fa-file-pdf"></i>
-                      </span>
+                      </span> -->
+                      <span class="icon is-small"><svg class="svg-inline--fa fa-file-pdf fa-w-12 " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com --></span>
                       <span>Supplementary</span>
                     </a>
                   </span>
 
-                  <!-- Github link -->
+                  <!-- Github 链接 -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
+                    <a href="https://github.com/wisdom-estimation/DIFNet" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark" style="background-color: #01B1A0;  color: white; border-color: #01B1A0;">
+                    <!-- <span class="icon">
                       <i class="fab fa-github"></i>
-                    </span>
+                    </span> -->
+                     <span class="icon"><svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com --></span>
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
               </span>
             </div>
           </div>
@@ -122,166 +139,238 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
+<section class="section is-compact">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+    <div class="columns is-centered">
+      <div class="column">
+        <div style="flex: 1; margin-right: 10px; text-align: center;">
+                <video poster="" autoplay="" controls="" muted="" loop="" style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
+                  <source src="./static/videos/track.mp4" type="video/mp4">
+                </video>
+                <p>
+                  This video demonstrates how multiple ground-based observation devices exchange information through communication with each other, enabling target tracking in a distributed scenario.
+                </p>
+              </div>
+        <hr>
+      </div>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+    <div class="hero-body">
+      <img src="static/images/fusion.jpg" alt="Decentralized IFNet Architecture"/>
+          <p style="font-size: 16px;">
+            The fusion center refers to the processing facilities. 
+            <b>(a) Centralized</b>: the fusion center computes the global estimate directly from all sensor measurements 
+            $\vz$. 
+            <b>(b) Hierarchical</b>: low-level fusion centers compute local estimates 
+            $\hat{\vx}, \hat{\mP}$ from their own sensor measurements 
+            $\vz$, and a high-level fusion center combines these local estimates into a global estimate. 
+            <b>(c) Decentralized</b>: each fusion center computes a local estimate 
+            $\hat{\vx}, \hat{\mP}$ from its own measurements 
+            $\vz$, and then fuses it with estimates from neighboring centers to produce an individual fusion estimate.
           </p>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+</section> -->
 
 
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+<section class="section is-compact">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered">
+        <h2 class="title is-3 has-text-centered">Abstract</h2>
+        <div class="content has-text-justified" style="padding-top:15px; line-height: 1.6;">
+          <p style="font-size: 18px;">
+            In recent years, decentralized sensor networks have garnered significant attention in the field of state estimation owing to
+            enhanced robustness, scalability, and fault tolerance. Optimal fusion performance can be achieved under fully connected
+            communication and known noise correlation structures. To mitigate communication overhead, the global state estimation
+            problem is decomposed into local subproblems through structured observation model. This ensures that even when the
+            communication network is not fully connected, each sensor can achieve locally optimal estimates of its observable state
+            components. To address the degradation of fusion accuracy induced by unknown correlations in measurement noise,
+            this paper proposes a data-driven method, termed Decentralized Information Fusion Neural Network <b>(Decentralized
+            IFNet)</b>, to learn unknown noise correlations in data for discrete-time nonlinear state space models with cross-correlated
+            measurement noises. Numerical simulations demonstrate that Decentralized IFNet achieves superior fusion performance
+            compared to conventional filtering methods and exhibits robust characteristics in more complex scenarios, such as the
+            presence of time-varying noise.
+          </p>
         </div>
       </div>
     </div>
+    <hr>
   </div>
 </section>
-<!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+
+<section class="section is-compact">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3 has-text-centered">The DIFNet Framework</h2>
+
+        <div class="content has-text-justified">
+          <img src="static/images/fusion.jpg" alt="Decentralized IFNet Architecture"/>
+            <p style="font-size: 16px;">
+              The fusion center refers to the processing facilities. 
+              <b>(a) Centralized</b>: the fusion center computes the global estimate directly from all sensor measurements 
+              $\vz$. 
+              <b>(b) Hierarchical</b>: low-level fusion centers compute local estimates 
+              $\hat{\vx}, \hat{\mP}$ from their own sensor measurements 
+              $\vz$, and a high-level fusion center combines these local estimates into a global estimate. 
+              <b>(c) Decentralized</b>: each fusion center computes a local estimate 
+              $\hat{\vx}, \hat{\mP}$ from its own measurements 
+              $\vz$, and then fuses it with estimates from neighboring centers to produce an individual fusion estimate.
+            </p>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+
+        <div class="content has-text-justified">
+          <img src="static/images/Decentralized_IFNet.png" alt="Decentralized IFNet Architecture">
+          <p style="font-size: 16px;">
+          Schematic diagram of the proposed Decentralized-IFNet. The top part shows the generation of local estimates and error
+          covariances by local sensors. The bottom part illustrates the communication and implementation flow at each fusion center."
+          </p>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
         
+
       </div>
     </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
+    <hr>
+  </div>
 </section>
-<!--End BibTex citation -->
+
+
+
+
+<section class="section is-compact">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3 has-text-centered">
+          <span class="icon"><svg class="svg-inline--fa fa-cogs fa-w-20" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="cogs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M512.1 191l-8.2 14.3c-3 5.3-9.4 7.5-15.1 5.4-11.8-4.4-22.6-10.7-32.1-18.6-4.6-3.8-5.8-10.5-2.8-15.7l8.2-14.3c-6.9-8-12.3-17.3-15.9-27.4h-16.5c-6 0-11.2-4.3-12.2-10.3-2-12-2.1-24.6 0-37.1 1-6 6.2-10.4 12.2-10.4h16.5c3.6-10.1 9-19.4 15.9-27.4l-8.2-14.3c-3-5.2-1.9-11.9 2.8-15.7 9.5-7.9 20.4-14.2 32.1-18.6 5.7-2.1 12.1.1 15.1 5.4l8.2 14.3c10.5-1.9 21.2-1.9 31.7 0L552 6.3c3-5.3 9.4-7.5 15.1-5.4 11.8 4.4 22.6 10.7 32.1 18.6 4.6 3.8 5.8 10.5 2.8 15.7l-8.2 14.3c6.9 8 12.3 17.3 15.9 27.4h16.5c6 0 11.2 4.3 12.2 10.3 2 12 2.1 24.6 0 37.1-1 6-6.2 10.4-12.2 10.4h-16.5c-3.6 10.1-9 19.4-15.9 27.4l8.2 14.3c3 5.2 1.9 11.9-2.8 15.7-9.5 7.9-20.4 14.2-32.1 18.6-5.7 2.1-12.1-.1-15.1-5.4l-8.2-14.3c-10.4 1.9-21.2 1.9-31.7 0zm-10.5-58.8c38.5 29.6 82.4-14.3 52.8-52.8-38.5-29.7-82.4 14.3-52.8 52.8zM386.3 286.1l33.7 16.8c10.1 5.8 14.5 18.1 10.5 29.1-8.9 24.2-26.4 46.4-42.6 65.8-7.4 8.9-20.2 11.1-30.3 5.3l-29.1-16.8c-16 13.7-34.6 24.6-54.9 31.7v33.6c0 11.6-8.3 21.6-19.7 23.6-24.6 4.2-50.4 4.4-75.9 0-11.5-2-20-11.9-20-23.6V418c-20.3-7.2-38.9-18-54.9-31.7L74 403c-10 5.8-22.9 3.6-30.3-5.3-16.2-19.4-33.3-41.6-42.2-65.7-4-10.9.4-23.2 10.5-29.1l33.3-16.8c-3.9-20.9-3.9-42.4 0-63.4L12 205.8c-10.1-5.8-14.6-18.1-10.5-29 8.9-24.2 26-46.4 42.2-65.8 7.4-8.9 20.2-11.1 30.3-5.3l29.1 16.8c16-13.7 34.6-24.6 54.9-31.7V57.1c0-11.5 8.2-21.5 19.6-23.5 24.6-4.2 50.5-4.4 76-.1 11.5 2 20 11.9 20 23.6v33.6c20.3 7.2 38.9 18 54.9 31.7l29.1-16.8c10-5.8 22.9-3.6 30.3 5.3 16.2 19.4 33.2 41.6 42.1 65.8 4 10.9.1 23.2-10 29.1l-33.7 16.8c3.9 21 3.9 42.5 0 63.5zm-117.6 21.1c59.2-77-28.7-164.9-105.7-105.7-59.2 77 28.7 164.9 105.7 105.7zm243.4 182.7l-8.2 14.3c-3 5.3-9.4 7.5-15.1 5.4-11.8-4.4-22.6-10.7-32.1-18.6-4.6-3.8-5.8-10.5-2.8-15.7l8.2-14.3c-6.9-8-12.3-17.3-15.9-27.4h-16.5c-6 0-11.2-4.3-12.2-10.3-2-12-2.1-24.6 0-37.1 1-6 6.2-10.4 12.2-10.4h16.5c3.6-10.1 9-19.4 15.9-27.4l-8.2-14.3c-3-5.2-1.9-11.9 2.8-15.7 9.5-7.9 20.4-14.2 32.1-18.6 5.7-2.1 12.1.1 15.1 5.4l8.2 14.3c10.5-1.9 21.2-1.9 31.7 0l8.2-14.3c3-5.3 9.4-7.5 15.1-5.4 11.8 4.4 22.6 10.7 32.1 18.6 4.6 3.8 5.8 10.5 2.8 15.7l-8.2 14.3c6.9 8 12.3 17.3 15.9 27.4h16.5c6 0 11.2 4.3 12.2 10.3 2 12 2.1 24.6 0 37.1-1 6-6.2 10.4-12.2 10.4h-16.5c-3.6 10.1-9 19.4-15.9 27.4l8.2 14.3c3 5.2 1.9 11.9-2.8 15.7-9.5 7.9-20.4 14.2-32.1 18.6-5.7 2.1-12.1-.1-15.1-5.4l-8.2-14.3c-10.4 1.9-21.2 1.9-31.7 0zM501.6 431c38.5 29.6 82.4-14.3 52.8-52.8-38.5-29.6-82.4 14.3-52.8 52.8z"></path></svg><!-- <i class="fa fa-cogs"></i> Font Awesome fontawesome.com --></span>  Experiments
+        </h2>
+
+        <!-- 线性状态空间模型 -->
+        <h3 class="title is-4" style="padding-bottom:10px ;">
+          Linear state space model
+        </h3>
+        <div class="columns is-centered" style="display: flex; justify-content: space-between; padding: 5px">
+
+          <div style="flex: 1; margin-right: 10px; text-align: center;">
+            <img src="./static/images/linear_s4_pos_rmse.jpg" alt="Image 1" style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
+            <p>RMSE of estimated position</p>
+          </div>
+
+          <div style="flex: 1; margin-left: 10px; text-align: center;">
+            <img src="./static/images/linear_s4_vel_rmse.jpg" alt="Image 2" style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
+            <p>RMSE of estimated velocity</p>
+          </div>
+
+        </div>
+
+        <!-- 非线性状态空间模型 -->
+        <h3 class="title is-4" style="padding-bottom:10px ;">
+          Nolinear state space model
+        </h3>
+        <div class="columns is-centered" style="display: flex; justify-content: space-between; padding: 5px">
+
+          <div style="flex: 1; margin-right: 10px; text-align: center;">
+            <img src="./static/images/Nolinear_s4_pos_rmse.jpg" alt="Image 1" style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
+            <p>RMSE of estimated position</p>
+          </div>
+
+          <div style="flex: 1; margin-left: 10px; text-align: center;">
+            <img src="./static/images/Nolinear_s4_vel_rmse.jpg" alt="Image 2" style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
+            <p>RMSE of estimated velocity</p>
+          </div>
+          
+        </div>
+
+        <!-- 时变噪声 -->
+        <h3 class="title is-4" style="padding-bottom:10px ;">
+          Time-varying noise
+        </h3>
+        <div class="columns is-centered" style="display: flex; justify-content: space-between; padding: 5px">
+
+          <div style="flex: 1; margin-right: 10px; text-align: center;">
+            <img src="./static/images/time_var_linear_s4_pos_rmse.jpg" alt="Image 1" style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
+            <p>RMSE of estimated position (σ = 0.5)</p>
+          </div>
+
+          <div style="flex: 1; margin-left: 10px; text-align: center;">
+            <img src="./static/images/time_var_linear_s4_vel_rmse.jpg" alt="Image 2" style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
+            <p>RMSE of estimated velocity (σ = 0.5)</p>
+          </div>
+          
+        </div>
+
+        <!-- 添加注释 -->
+        <div style="flex: 1; margin-left: 10px; text-align: left; color: #686565;">
+          <p>
+            * σ indicate measurement noise case
+          </p>
+        </div>
+
+        <hr>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--BibTex 引文 -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+      <pre style="border-radius: 10px;">
+        <code>
+            <!-- @inproceedings{li2025seeground,
+            title     = {SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding},
+            author    = {Rong Li and Shijie Li and Lingdong Kong and Xulei Yang and Junwei Liang},
+            booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+            year      = {2025},} -->
+        </code>
+      </pre>
+    <hr>
+  </div>
+</section>
+
+
+<!--结束 BibTex 引文 -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Related Links</h2>
+      <p class="content has-text-justified">
+        <b>There are some other excellent works that were introduced around the same time as ours:</b>
+      </p>
+      <p>
+        <b>
+          - 
+          <a href="https://www.sciencedirect.com/science/article/pii/S1566253524005281" target="_blank" style="padding-top: 30px; font-size: 18px;">
+            IFNet: Data-driven multisensor estimate fusion with unknown correlation in sensor measurement noises
+          </a>
+        </b>
+      </p>
+
+      <!-- <p>
+        <b>
+          - 
+          <a href="https://ieeexplore.ieee.org/document/9462434" target="_blank" style=" font-size: 18px;">
+            Decentralized Information Fusion for Nonlinear Systems with Unknown Correlations in Measurement Noise
+          </a>
+        </b>
+      </p> -->
+      
+    <hr>
+  </div>
+</section>
+
 
 
   <footer class="footer">
@@ -302,11 +391,11 @@
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
+<!-- Statcounter 跟踪代码 -->
   
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<!-- 您可以通过在 statcounter.com 创建一个帐户来添加跟踪器以跟踪页面访问 -->
 
-    <!-- End of Statcounter Code -->
+    <!-- Statcounter 代码结束 -->
 
   </body>
   </html>
