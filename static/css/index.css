@@ -82,6 +82,12 @@ body {
   display: inline-block;
 }
 
+/* 仅在“单位/机构”区块（is-italic）中，每个条目独占一行 */
+.publication-authors.is-italic .author-block {
+  display: block;        /* 覆盖默认的 inline-block，使其换行 */
+  margin-bottom: 0.2rem; /* 行距微调，避免过于拥挤 */
+}
+
 .publication-banner img {
 }
 
@@ -170,6 +176,15 @@ body {
 .button .icon.is-small .fab {
   font-size: 1.45rem; /* 调整 Font Awesome 图标字体大小（原 0.95rem） */
   line-height: 1.55rem;  /* 与容器对齐（原 1rem） */
+}
+
+
+
+
+/* Keep specific long phrase in one line on larger screens */
+.nowrap { white-space: nowrap; }
+@media (max-width: 768px) {
+  .nowrap { white-space: normal; }
 }
 
 
