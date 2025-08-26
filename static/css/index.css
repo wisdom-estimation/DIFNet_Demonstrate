@@ -151,6 +151,14 @@ body {
 
 
 
+/* Abstract 区块向上位移 20px */
+.section.is-raised-up-20 {
+  margin-top: -20px; /* 向上移动 20px */
+}
+
+
+
+
 /* 优化按钮内小图标尺寸与文字对齐 */
 .button .icon.is-small {
   width: 1.55rem;      /* 控制图标盒子宽度（原 1rem） */

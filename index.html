@@ -143,8 +143,8 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column">
-        <div style="flex: 1; margin-right: 10px; text-align: center;">
-                <video poster="" autoplay="" controls="" muted="" loop="" style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
+        <div style="flex: 1; margin-right: 10px; text-align: center;margin-top: -30px;">
+                <video poster="" autoplay="" controls="" muted="" loop="" playsinline id="demo-video" style="border-radius: 10px; border: 1px solid #ccc; width: 100%;">
                   <source src="./static/videos/track.mp4" type="video/mp4">
                 </video>
                 <p>
@@ -179,11 +179,11 @@
 
 
 
-<section class="section is-compact">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width has-text-centered">
-        <h2 class="title is-3 has-text-centered">Abstract</h2>
+<section class="section is-compact is-raised-up-20">
+  <div class="container is-max-desktop ">
+    <div class="columns is-centered ">
+      <div class="column is-full-width has-text-centered ">
+        <h2 class="title is-3 has-text-centered " >Abstract</h2>
         <div class="content has-text-justified" style="padding-top:15px; line-height: 1.6;">
           <p style="font-size: 18px;">
             In recent years, decentralized sensor networks have garnered significant attention in the field of state estimation owing to
@@ -252,7 +252,7 @@
     <div class="columns is-centered">
       <div class="column">
         <h2 class="title is-3 has-text-centered">
-          <span class="icon"><svg class="svg-inline--fa fa-cogs fa-w-20" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="cogs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M512.1 191l-8.2 14.3c-3 5.3-9.4 7.5-15.1 5.4-11.8-4.4-22.6-10.7-32.1-18.6-4.6-3.8-5.8-10.5-2.8-15.7l8.2-14.3c-6.9-8-12.3-17.3-15.9-27.4h-16.5c-6 0-11.2-4.3-12.2-10.3-2-12-2.1-24.6 0-37.1 1-6 6.2-10.4 12.2-10.4h16.5c3.6-10.1 9-19.4 15.9-27.4l-8.2-14.3c-3-5.2-1.9-11.9 2.8-15.7 9.5-7.9 20.4-14.2 32.1-18.6 5.7-2.1 12.1.1 15.1 5.4l8.2 14.3c10.5-1.9 21.2-1.9 31.7 0L552 6.3c3-5.3 9.4-7.5 15.1-5.4 11.8 4.4 22.6 10.7 32.1 18.6 4.6 3.8 5.8 10.5 2.8 15.7l-8.2 14.3c6.9 8 12.3 17.3 15.9 27.4h16.5c6 0 11.2 4.3 12.2 10.3 2 12 2.1 24.6 0 37.1-1 6-6.2 10.4-12.2 10.4h-16.5c-3.6 10.1-9 19.4-15.9 27.4l8.2 14.3c3 5.2 1.9 11.9-2.8 15.7-9.5 7.9-20.4 14.2-32.1 18.6-5.7 2.1-12.1-.1-15.1-5.4l-8.2-14.3c-10.4 1.9-21.2 1.9-31.7 0zm-10.5-58.8c38.5 29.6 82.4-14.3 52.8-52.8-38.5-29.7-82.4 14.3-52.8 52.8zM386.3 286.1l33.7 16.8c10.1 5.8 14.5 18.1 10.5 29.1-8.9 24.2-26.4 46.4-42.6 65.8-7.4 8.9-20.2 11.1-30.3 5.3l-29.1-16.8c-16 13.7-34.6 24.6-54.9 31.7v33.6c0 11.6-8.3 21.6-19.7 23.6-24.6 4.2-50.4 4.4-75.9 0-11.5-2-20-11.9-20-23.6V418c-20.3-7.2-38.9-18-54.9-31.7L74 403c-10 5.8-22.9 3.6-30.3-5.3-16.2-19.4-33.3-41.6-42.2-65.7-4-10.9.4-23.2 10.5-29.1l33.3-16.8c-3.9-20.9-3.9-42.4 0-63.4L12 205.8c-10.1-5.8-14.6-18.1-10.5-29 8.9-24.2 26-46.4 42.2-65.8 7.4-8.9 20.2-11.1 30.3-5.3l29.1 16.8c16-13.7 34.6-24.6 54.9-31.7V57.1c0-11.5 8.2-21.5 19.6-23.5 24.6-4.2 50.5-4.4 76-.1 11.5 2 20 11.9 20 23.6v33.6c20.3 7.2 38.9 18 54.9 31.7l29.1-16.8c10-5.8 22.9-3.6 30.3 5.3 16.2 19.4 33.2 41.6 42.1 65.8 4 10.9.1 23.2-10 29.1l-33.7 16.8c3.9 21 3.9 42.5 0 63.5zm-117.6 21.1c59.2-77-28.7-164.9-105.7-105.7-59.2 77 28.7 164.9 105.7 105.7zm243.4 182.7l-8.2 14.3c-3 5.3-9.4 7.5-15.1 5.4-11.8-4.4-22.6-10.7-32.1-18.6-4.6-3.8-5.8-10.5-2.8-15.7l8.2-14.3c-6.9-8-12.3-17.3-15.9-27.4h-16.5c-6 0-11.2-4.3-12.2-10.3-2-12-2.1-24.6 0-37.1 1-6 6.2-10.4 12.2-10.4h16.5c3.6-10.1 9-19.4 15.9-27.4l-8.2-14.3c-3-5.2-1.9-11.9 2.8-15.7 9.5-7.9 20.4-14.2 32.1-18.6 5.7-2.1 12.1.1 15.1 5.4l8.2 14.3c10.5-1.9 21.2-1.9 31.7 0l8.2-14.3c3-5.3 9.4-7.5 15.1-5.4 11.8 4.4 22.6 10.7 32.1 18.6 4.6 3.8 5.8 10.5 2.8 15.7l-8.2 14.3c6.9 8 12.3 17.3 15.9 27.4h16.5c6 0 11.2 4.3 12.2 10.3 2 12 2.1 24.6 0 37.1-1 6-6.2 10.4-12.2 10.4h-16.5c-3.6 10.1-9 19.4-15.9 27.4l8.2 14.3c3 5.2 1.9 11.9-2.8 15.7-9.5 7.9-20.4 14.2-32.1 18.6-5.7 2.1-12.1-.1-15.1-5.4l-8.2-14.3c-10.4 1.9-21.2 1.9-31.7 0zM501.6 431c38.5 29.6 82.4-14.3 52.8-52.8-38.5-29.6-82.4 14.3-52.8 52.8z"></path></svg><!-- <i class="fa fa-cogs"></i> Font Awesome fontawesome.com --></span>  Experiments
+          <span class="icon"><svg class="svg-inline--fa fa-cogs fa-w-20" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="cogs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M512.1 191l-8.2 14.3c-3 5.3-9.4 7.5-15.1 5.4-11.8-4.4-22.6-10.7-32.1-18.6-4.6-3.8-5.8-10.5-2.8-15.7l8.2-14.3c-6.9-8-12.3-17.3-15.9-27.4h-16.5c-6 0-11.2-4.3-12.2-10.3-2-12-2.1-24.6 0-37.1 1-6 6.2-10.4 12.2-10.4h16.5c3.6-10.1 9-19.4 15.9-27.4l-8.2-14.3c-3-5.2-1.9-11.9 2.8-15.7 9.5-7.9 20.4-14.2 32.1-18.6 5.7-2.1 12.1.1 15.1 5.4l8.2 14.3c10.5-1.9 21.2-1.9 31.7 0L552 6.3c3-5.3 9.4-7.5 15.1-5.4 11.8 4.4 22.6 10.7 32.1 18.6 4.6 3.8 5.8 10.5 2.8 15.7l-8.2 14.3c6.9 8 12.3 17.3 15.9 27.4h16.5c6 0 11.2 4.3 12.2 10.3 2 12 2.1 24.6 0 37.1-1 6-6.2 10.4-12.2 10.4h-16.5c-3.6 10.1-9 19.4-15.9 27.4l8.2 14.3c3 5.2 1.9 11.9-2.8 15.7-9.5 7.9-20.4 14.2-32.1 18.6-5.7 2.1-12.1-.1-15.1-5.4l-8.2-14.3c-10.4 1.9-21.2 1.9-31.7 0zM501.6 431c38.5 29.6 82.4-14.3 52.8-52.8-38.5-29.6-82.4 14.3-52.8 52.8z"></path></svg><!-- <i class="fa fa-cogs"></i> Font Awesome fontawesome.com --></span>  Experiments
         </h2>
 
         <!-- 线性状态空间模型 -->
@@ -325,25 +325,24 @@
 
 
 <!--BibTex 引文 -->
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
       <pre style="border-radius: 10px;">
         <code>
-            <!-- @inproceedings{li2025seeground,
+            @inproceedings{li2025seeground,
             title     = {SeeGround: See and Ground for Zero-Shot Open-Vocabulary 3D Visual Grounding},
             author    = {Rong Li and Shijie Li and Lingdong Kong and Xulei Yang and Junwei Liang},
             booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-            year      = {2025},} -->
+            year      = {2025},}
         </code>
       </pre>
     <hr>
   </div>
-</section>
+</section> -->
 
 
-<!--结束 BibTex 引文 -->
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title is-3">Related Links</h2>
       <p class="content has-text-justified">
@@ -358,18 +357,18 @@
         </b>
       </p>
 
-      <!-- <p>
+      <p>
         <b>
           - 
           <a href="https://ieeexplore.ieee.org/document/9462434" target="_blank" style=" font-size: 18px;">
             Decentralized Information Fusion for Nonlinear Systems with Unknown Correlations in Measurement Noise
           </a>
         </b>
-      </p> -->
+      </p>
       
     <hr>
   </div>
-</section>
+</section> -->
 
 
 
@@ -399,3 +398,37 @@
 
   </body>
   </html>
+
+<!-- 设置演示视频的播放速度与循环行为 -->
+<script>
+  /**
+   * initDemoVideo
+   * 功能：
+   * 1) 将页面演示视频（id="demo-video"）播放速度设置为 1.3 倍；
+   * 2) 确保视频一直循环播放（对不支持 loop 的环境提供兜底方案）。
+   */
+  (function initDemoVideoWrapper() {
+    function initDemoVideo() {
+      var v = document.getElementById('demo-video');
+      if (!v) return;
+      v.playbackRate = 1.3;
+      v.loop = true;
+      // 兜底：某些环境下 loop 或被用户切换关闭时，结束后手动重播
+      v.addEventListener('ended', function () {
+        try {
+          this.currentTime = 0;
+          this.play();
+        } catch (e) {}
+      });
+      // 若用户点击播放/重播，仍强制保持 1.3x
+      v.addEventListener('play', function () {
+        if (this.playbackRate !== 1.3) this.playbackRate = 1.3;
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initDemoVideo);
+    } else {
+      initDemoVideo();
+    }
+  })();
+</script>
